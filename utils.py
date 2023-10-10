@@ -2,20 +2,20 @@
 This file contains util functions to avoid repeating them in the problems
 """
 
-from typing import Any, Iterable
+from typing import Any, Iterable, List
 
 # Linked lists
 
 
 class ListNode:
-    def __init__(self, val=0, nextValue=None):
+    def __init__(self, val: Any, next_value: Any | None = None) -> None:
         self.val = val
-        self.next = nextValue
+        self.next = next_value
 
 
-def convert_to_linked_list(iterable: Iterable[Any]):
+def convert_to_linked_list(iterable: Iterable[Any]) -> ListNode:
     """
-    Converts an iterable into a linked list and retursn it
+    Converts an iterable into a linked list and returns it
     """
     current = dummy = ListNode(0)
     for element in iterable:
