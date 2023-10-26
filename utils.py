@@ -23,6 +23,16 @@ def convert_to_linked_list(iterable: Iterable[Any]) -> ListNode:
         current = current.next
     return dummy.next
 
+# Trees
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
 # binary search
 
 
